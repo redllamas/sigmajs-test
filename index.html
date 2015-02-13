@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>sigma test</title>
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+  <section>
+    <p>yo yo sigma.js test yo</p>
+    <div id="container"></div>
+  </section>
+  <script src="js/sigma.min.js"></script>
+  <script src="js/plugins/sigma.parsers.json.min.js"></script>
+  <script>
+    sigma.parsers.json('data.json', {
+      container: 'container',
+      settings: {
+        defaultNodeColor: '#ec5148'
+      }
+    });
+  </script>
+</body>
+</html>
